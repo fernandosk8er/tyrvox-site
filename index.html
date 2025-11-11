@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyrvox - Soluções que funcionam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">Tyrvox</div>
+        <nav>
+            <ul id="mainMenu">
+                <li><a href="#home" data-i18n="home">Início</a></li>
+                <li>
+                    <a href="#house" data-i18n="house-submenu">Lar</a>
+                    <ul>
+                        <li><a href="#electronica" data-i18n="electronics"> Eletrônica</a></li>
+                        <li><a href="#electricidad" data-i18n="electricity">Eletricidade</a></li>
+                        <li><a href="#domotica" data-i18n="automation">Automação residencial</a></li>
+                    </ul>
+                </li>
+                <li><a href="#comercial" data-i18n="commercial">Comercial</a></li>
+                <li><a href="#industrial" data-i18n="industrial">Industrial</a></li>
+                <li>
+                    <a href="#medical" data-i18n="medical">Medicina</a>
+                    <ul>
+                        <li><a href="#clinicas" data-i18n="clinics">Clínicas</a></li>
+                        <li><a href="#laboratorios" data-i18n="labs">Laboratorios</a></li>
+                        <li><a href="#spa" data-i18n="spa">Spa & Estéticas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#elevador" data-i18n="elevator">Ascensores</a></li>
+                <li>
+                    <a href="#informatics" data-i18n="informatics">Computação</a>
+                    <ul>
+                        <li><a href="#graphic" data-i18n="graphic-design">Desing Gráfico</a></li>
+                        <li><a href="#gigantografia" data-i18n="large-format">Gigantografía</a></li>
+                        <li><a href="#web-dev" data-i18n="web-development">Desenvolvimento Web</a></li>
+                        <li><a href="#app-dev" data-i18n="app-development">Desenvolvimento de aplicativos</a></li>
+                        <li><a href="#servers" data-i18n="server-maintenance">Instalação e manutenção de servidores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#programming" data-i18n="programming">Programação</a></li>
+                <li><a href="#protheus" data-i18n="protheus">Protheus</a></li>
+                <li><a href="#projects" data-i18n="projects">Projetos </a></li>
+                <li><a href="#about" data-i18n="about">Sobre Nós</a></li>
+                <li><a href="#contact" data-i18n="contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="lang" onchange="changeLang(this.value)">
+                <option value="pt">PT</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="home" class="banner">
+        <h1 data-i18n="banner-title">Tyrvox</h1>
+        <p data-i18n="banner-subtitle">
+            Soluções que funcionam – Do residencial ao industrial, cuidamos de tudo com eficiência e segurança
+        </p>
+        <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" 
+                data-i18n="btn-services" class="btn-primary">
+            Ver Serviços
+        </button>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" 
+                data-i18n="btn-contact" class="btn-primary">
+            Contato
+        </button>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="services">
+        <h2 data-i18n="services-title">Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <h3 data-i18n="house-title">Lar</h3>
+                <p data-i18n="house-desc">Instalação elétrica, conserto de eletrodomésticos, segurança e domótica.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="commercial-title">Comercial</h3>
+                <p data-i18n="commercial-desc">Instalações elétricas, sistemas de segurança, redes, manutenção técnica, elevadores e escadsa rolantes.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="industrial-title">Industrial</h3>
+                <p data-i18n="industrial-desc">Projetos industriais, manutenção técnica, energia e automação.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="medical-title">Medicina</h3>
+                <p data-i18n="medical-desc">Clínicas, laboratórios, spas e equipamentos médicos.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="elevator-title">Elevadores</h3>
+                <p data-i18n="elevator-desc">Instalação, manutenção e inspeção de elevadores e escadas rolantes residenciais e comerciais.</p>
+            </div>
+            <!-- Nuevo bloque Computación -->
+            <div class="card">
+                <h3 data-i18n="informatics-title">Computação</h3>
+                <p data-i18n="informatics-desc">
+                    Desing Gráfico, Gigantografía, Desenvolvimento Web, Desemvolvimento de Apps, instalação e manutenção de servidores.
+                </p>
+            </div>
+            <!-- Nuevo bloque Programación -->
+            <div class="card">
+                <h3 data-i18n="programming-title">Programação</h3>
+                <p data-i18n="programming-desc">
+                    Desenvolvimento de software personalizado, sistemas web, aplicações empresariais e soluções tecnológicas.
+                </p>
+            </div>
+            <!-- Nuevo bloque Protheus -->
+            <div class="card">
+                <h3 data-i18n="protheus-title">Protheus</h3>
+                <p data-i18n="protheus-desc">
+                    Implementação, customização e suporte do sistema ERP Protheus TOTVS para gestão empresarial integrada.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portfolio -->
+    <section id="projects">
+        <h2 data-i18n="projects-title">Projetos</h2>
+        <div class="portfolio">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Projeto 1" onclick="openLightbox(this.src)">
+                <h4 data-i18n="proj1-title">Instalação elétrica comercial</h4>
+                <p data-i18n="proj1-desc">Projeto completo para loja de médio porte</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Projeto 2" onclick="openLightbox(this.src)">
+                <h4 data-i18n="proj2-title">Manutenção de elevadores</h4>
+                <p data-i18n="proj2-desc">Revisão preventiva e corretiva</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Projeto 3" onclick="openLightbox(this.src)">
+                <h4 data-i18n="proj3-title">Sistema de câmeras residenciais</h4>
+                <p data-i18n="proj3-desc">Instalação completa com monitoramento remoto</p>
+            </div>
+            <!-- Proyectos Computación -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Projeto 4" onclick="openLightbox(this.src)">
+                <h4 data-i18n="proj4-title">Desarrollo Web & Apps</h4>
+                <p data-i18n="proj4-desc">Páginas web, aplicaciones y sistemas personalizados</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Projeto 5" onclick="openLightbox(this.src)">
+                <h4 data-i18n="proj5-title">Diseño Gráfico & Gigantografía</h4>
+                <p data-i18n="proj5-desc">Branding, impresión de gran formato y material visual profesional</p>
+            </div>
+            <!-- Nuevo proyecto Programación -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Projeto 6" onclick="openLightbox(this.src)">
+                <h4 data-i18n="proj6-title">Sistema de Gestão Empresarial</h4>
+                <p data-i18n="proj6-desc">Desenvolvimento de software personalizado para automação de processos</p>
+            </div>
+            <!-- Nuevo proyecto Protheus -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Projeto 7" onclick="openLightbox(this.src)">
+                <h4 data-i18n="proj7-title">Implementação Protheus</h4>
+                <p data-i18n="proj7-desc">Customização e implantação do ERP Protheus para indústria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <!-- Sección About -->
+    <section id="about" class="about">
+        <h2 data-i18n="about-title">Sobre Nós</h2>
+        <img src="https://via.placeholder.com/200" alt="Técnico">
+        <p data-i18n="about-desc">
+            Tyrvox é especialista em soluções técnicas residenciais, comerciais, industriais e de computação. Garantimos eficiência, segurança e confiabilidade em cada serviço.
+        </p>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact">
+        <h2 data-i18n="contact-title">Contato</h2>
+        <form onsubmit="submitForm(event)">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="service" placeholder="Serviço" required>
+            <textarea id="message" placeholder="Mensagem" rows="5" required></textarea>
+            <button type="submit" id="sendBtn">Enviar</button>
+        </form>
+        <div class="info">
+            <p>WhatsApp: +55 00 0000-0000 | Email: contato@tyrvox.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Tyrvox</div>
+        <p>© 2025 Tyrvox. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botón WhatsApp flotante -->
+    <div class="whatsapp" onclick="window.open('https://wa.me/550000000000','_blank')">
+        
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
